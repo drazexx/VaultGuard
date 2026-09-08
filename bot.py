@@ -57,7 +57,8 @@ async def userIsChannelMember(context: ContextTypes.DEFAULT_TYPE, userId: int) -
     try:
         member = await context.bot.get_chat_member(config.channelId, userId)
         return member.status not in ("left", "kicked")
-    except TelegramError:
+    except TelegramError as e:
+        logger.warning(f"membership check failed for user {userId}: {e}")
         return False
 
 

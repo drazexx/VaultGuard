@@ -14,9 +14,10 @@ appreciationQuotes = [
 def welcomeText():
     return (
         f"<b>{config.botName}</b>\n\n"
-        "This is the reporting line for our channel. If you've come across a post that "
-        "shouldn't be here, send the message link and we'll walk through it together.\n\n"
-        "Just paste the link whenever you're ready."
+        "Spotted something that shouldn't be here? Illegal, disturbing, doesn't matter — "
+        "you're in the right place.\n\n"
+        "Drop the message link below and we'll walk through it together, step by step. "
+        "Takes less than a minute, and it genuinely helps."
     )
 
 
